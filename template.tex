@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{mavlab}
+\usepackage{times}
+
+\title{MAVLab style guide}
+\author{E.J.J. Smeur\thanks{Email address: e.j.j.smeur@tudelft.nl}, A.B. Author, C.D. Writer \\ Delft University of Technology, Kluyverweg 1, Netherlands}
+\begin{document}
+\maketitle
+\begin{abstract}
+	The abstract is in bold font.
+	Limit the text here to 150 words.
+	\end{abstract}
+
+\section{Introduction}
+You can use this style for your paper writing endeavours, and for self-archiving, which is often not allowed with the journal formatting.
+
+If you have any improvements, please discuss and implement them at: \url{https://github.com/tudelft/latex_style}.
+
+\section{Citing}
+For citing papers, use \textbackslash cite\{\} whenever you want to use the citation in the sentence.
+Example: \cite{smeur} investigated INDI for the attitude control of MAVs.
+
+Alternatively, you can cite a paper between parentheses with \textbackslash citep\{\}.
+Example: Behaviour trees can be used to evolve robot behaviour \citep{Scheper2016a}.
+
+\section{Sections}
+
+You can use sections to separate big parts of your paper.
+
+\subsection{Subsection}
+
+For further specification use subsections.
+
+\subsubsection{Subsubsection}
+And lastly subsubsections.
+
+\section{Notation of refs}
+
+Capitalize the first letter of the words Equation and Figure when you follow with a \textbackslash ref.
+Example: Equation \ref{eq:example} is a very interesting equation.
+
+\begin{equation}
+	1 + 1 = 2
+	\label{eq:example}
+\end{equation}
+
+\section*{Acknowledgements}
+This section does not get a number.
+
+\bibliography{bibliography}
+
+\end{document}

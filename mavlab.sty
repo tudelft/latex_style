@@ -1,0 +1,51 @@
+% This is the MAVLab style file
+% Based on the IMAV style, adapted by Ewoud Smeur
+% Please help us keep this document relevant and up-to-date by sharing your additions and modifications.
+
+% Packages
+\usepackage{natbib}
+\usepackage[hidelinks]{hyperref}
+
+% Appearance
+\twocolumn \flushbottom \sloppy
+% Note that TeX has built-in 1-inch top and left margins.
+\setlength\topmargin{-0.25in}
+\setlength\oddsidemargin{-0.25in}
+\setlength\evensidemargin{-0.25in}
+\setlength\textheight{9.0in}
+\setlength\textwidth{7.0in}
+\setlength\columnsep{0.25in}
+\newlength\titlebox \setlength\titlebox{2.25in}
+\setlength\headheight{0pt}   \setlength\headsep{0pt}
+\thispagestyle{empty}        \pagestyle{empty}
+
+%% Title %%
+\def\@maketitle{
+\vbox{
+  \hsize\textwidth
+  \linewidth\hsize
+  \centering \huge \textbf \@title \par
+  \vskip 3mm
+  \normalsize \@author
+  \vskip 8mm
+}}
+
+\renewenvironment{abstract}{\centerline{\sc \textbf{Abstract}}\vspace{2mm}\bfseries \noindent}{}
+
+%% Section headings %%
+\def\thesection {\arabic{section}}
+
+\renewcommand\section{
+\@startsection {section}{1}{\z@}%
+{.5\baselineskip\@plus.4\baselineskip}{.3\baselineskip}%
+{\sc \centering \textbf}%
+}
+
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+{.3\baselineskip\@plus.2\baselineskip}{.2\baselineskip} {\textbf}}
+
+\renewcommand\subsubsection{\@startsection{subsubsection}{2}{\z@}%
+{.3\baselineskip\@plus.2\baselineskip}{.2\baselineskip} {\itshape}}
+
+%% Bibliography %%
+\bibliographystyle{plainnat}
